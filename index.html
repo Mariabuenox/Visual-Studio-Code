@@ -5,118 +5,88 @@
 
     <script>
         $nome = prompt("Qual seu nome ?")
-        document.writeln("O nome digitado foi: " + $nome)
-        document.write("<br>")
-        $sexo = prompt("Qual é o sexo? [M] ou [F]")
-        document.writeln("Sexo = " + $sexo)
-        document.write("<br>")
+        $sexo = prompt("Qual é o sexo? [M]Masculino ou [F]Feminino")
         $idade = prompt("Digite sua idade: ")
+        document.writeln("<center>")
+
+        document.write("<table border='1' width='500'>")
+
+        document.write("<tr align='center'>")
+        document.write("<td width='225'><b>Nome</b></td>")
+        document.write("<td width='110'><b>Idade</b></td>")
+        document.write("<td width='165'><b>Sexo</b></td>")
+        document.write("<td width='70'><b>Foto</b></td>")
+        document.write("</tr>")
+
 
         if (($sexo == "M") || ($sexo == "m")) {
-            document.writeln("Masculino")
+            alert("Masculino")
             if ($idade < 18) {
-                document.write("/menino")
+                alert("menino")
+                if ($sexo == "masculino")
+                    document.write("<tr>")
+                document.write("<td align='center'><b>" + $nome + "</b></td>")
+                document.write("<td align='center'><b>" + $idade + "</b></td>")
+                document.write("<td align='center'><b>" + $sexo + "</b></td>")
+                document.write("<td align='center'><img src='img/menino.jpg'</td>")
+                document.write("</tr>")
+                document.write("</table>")
+
             }
             else {
-                document.write("/homem")
+                alert("homem")
+                if ($sexo == "masculino")
+                    document.write("<table>")
+
+                document.write("<tr>")
+                document.write("<td align='center'><b>" + $nome + "</b></td>")
+                document.write("<td align='center'><b>" + $idade + "</b></td>")
+                document.write("<td align='center'><b>" + $sexo + "</b></td>")
+                document.write("<td align='center'><img src='img/cr7.jpg'</td>")
+                document.write("</tr>")
+                document.write("</table>")
             }
         }
         else {
-            document.write("Feminino")
+            alert("Feminino")
             if ($idade < 18) {
-                document.write("/menina")
+                alert("menina")
+                if ($sexo == "feminino")
+                    document.write("<table>")
+
+                document.write("<tr>")
+                document.write("<td align='center'><b>" + $nome + "</b></td>")
+                document.write("<td align='center'><b>" + $idade + "</b></td>")
+                document.write("<td align='center'><b>" + $sexo + "</b></td>")
+                document.write("<td align='center'><img src='img/shiloh.jpg'</td>")
+                document.write("</tr>")
+                document.write("</table>")
             }
             else {
-                document.write("/mulher")
+                alert("mulher")
+                if ($sexo == "feminino")
+                    document.write("<table>")
+
+                document.write("<tr>")
+                document.write("<td align='center'><b>" + $nome + "</b></td>")
+                document.write("<td align='center'><b>" + $idade + "</b></td>")
+                document.write("<td align='center'><b>" + $sexo + "</b></td>")
+                document.write("<td align='center'><img src='img/angelina.jpg'</td>")
+                document.write("</tr>")
+                document.write("</table>")
             }
-
-        }
-        
-        document.write("<br>")
-
-        if ($idade < 18) {
-            document.write("Menor de idade")
-        }
-        else {
-            document.write("Maior de idade")
         }
 
-        alert("Hello World!")
-        document.write("<center>")
-        document.write("<font color='red' size='6'>SENAI - Sumaré</font>")
-        document.write("<br><img src='imag/senai.png' width='300'")
-        document.write("</center>")
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela</title>
+    <title>Document</title>
+
+
 </head>
 
-<body bgcolor="#DCDCDC">
-    <center>
-        <table border="1" width="500">
-            <tr align="center">
-                <td width="200"><b>Nome</b></td>
-                <td width="100"><b>Idade</b></td>
-                <td width="148"><b>Foto</b></td>
-            </tr>
-            <tr>
-                <td>
-                    <font size="4">Gisele Bündchen</font>
-                </td>
-                <td>43</td>
-                <td><a href="https://github.com/Mariabuenox"></a>
-                    <center><img src="imag/mulheres/gisele.jpg"></center>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <font size="4">Adriana Lima</font>
-                </td>
-                <td>42</td>
-                <td>
-                    <center><img src="imag/mulheres/adriana.jpg"></center>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <font size="4">Angelina Jolie</font>
-                </td>
-                <td>48</td>
-                <td>
-                    <center><img src="imag/mulheres/angelina.jpg"></center>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <font size="4">Ian Somerhalder</font>
-                </td>
-                <td>45</td>
-                <td><a href="https://github.com/Mariabuenox"></a>
-                    <center><img src="imag/homens/damon.jpg"></center>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <font size="4">Tom Cruise</font>
-                </td>
-                <td>61</td>
-                <td>
-                    <center><img src="imag/homens/tom.jpg"></center>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <font size="4">Cristiano Ronaldo</font>
-                </td>
-                <td>39</td>
-                <td>
-                    <center><img src="imag/homens/cristiano.jpg"></center>
-                </td>
-            </tr>
-        </table>
-    </center>
+<body>
 
 </body>
 
