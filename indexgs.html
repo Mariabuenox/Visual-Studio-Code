@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script>
+        $nome = prompt("Qual seu nome ?")
+        $sexo = prompt("Qual é o sexo? [M]Masculino ou [F]Feminino")
+        $idade = prompt("Digite sua idade: ")
+        document.writeln("<center>")
+
+        document.write("<table border='1' width='500'>")
+
+        document.write("<tr align='center'>")
+        document.write("<td width='225'><b>Nome</b></td>")
+        document.write("<td width='110'><b>Idade</b></td>")
+        document.write("<td width='165'><b>Sexo</b></td>")
+        document.write("<td width='70'><b>Foto</b></td>")
+        document.write("</tr>")
+
+
+        if (($sexo == "M") || ($sexo == "m")) {
+            alert("Masculino")
+            if ($idade < 18) {
+                alert("menino")
+                if ($sexo == "masculino")
+                    document.write("<tr>")
+                document.write("<td align='center'><b>" + $nome + "</b></td>")
+                document.write("<td align='center'><b>" + $idade + "</b></td>")
+                document.write("<td align='center'><b>" + $sexo + "</b></td>")
+                document.write("<td align='center'><img src='img/menino.jpg'</td>")
+                document.write("</tr>")
+                document.write("</table>")
+
+            }
+            else {
+                alert("homem")
+                if ($sexo == "masculino")
+                    document.write("<table>")
+
+                document.write("<tr>")
+                document.write("<td align='center'><b>" + $nome + "</b></td>")
+                document.write("<td align='center'><b>" + $idade + "</b></td>")
+                document.write("<td align='center'><b>" + $sexo + "</b></td>")
+                document.write("<td align='center'><img src='img/cr7.jpg'</td>")
+                document.write("</tr>")
+                document.write("</table>")
+            }
+        }
+        else {
+            alert("Feminino")
+            if ($idade < 18) {
+                alert("menina")
+                if ($sexo == "feminino")
+                    document.write("<table>")
+
+                document.write("<tr>")
+                document.write("<td align='center'><b>" + $nome + "</b></td>")
+                document.write("<td align='center'><b>" + $idade + "</b></td>")
+                document.write("<td align='center'><b>" + $sexo + "</b></td>")
+                document.write("<td align='center'><img src='img/shiloh.jpg'</td>")
+                document.write("</tr>")
+                document.write("</table>")
+            }
+            else {
+                alert("mulher")
+                if ($sexo == "feminino")
+                    document.write("<table>")
+
+                document.write("<tr>")
+                document.write("<td align='center'><b>" + $nome + "</b></td>")
+                document.write("<td align='center'><b>" + $idade + "</b></td>")
+                document.write("<td align='center'><b>" + $sexo + "</b></td>")
+                document.write("<td align='center'><img src='img/angelina.jpg'</td>")
+                document.write("</tr>")
+                document.write("</table>")
+            }
+        }
+
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        $peso = prompt("Qual é o seu peso?")
+        $altura = prompt("Qual a sua altura?")
+        $altura2 = $altura * $altura
+        $imc = $peso / $altura2
+
+
+        if ($imc < 18.5) {
+            document.write("abaixo do peso")
+            document.write("<img src= 'img/ap.jpg'>")
+        }
+        else {
+            if ($imc < 25) {
+                document.write("peso normal")
+                document.write("<img src = 'img/Astrid.webp'>")
+            }
+            else {
+                if ($imc < 30) {
+                    document.write("sobrepeso")
+                    document.write("<img src = 'img/p.jpg'>")
+                }
+                else {
+                    if ($imc < 35) {
+                        document.write("obessidade I")
+                        document.write("<img src = 'img/faustao.jpg'>")
+                    }
+                    else {
+                        if ($imc < 40) {
+                            document.write("obessidade II")
+                            document.write("<img src = 'img/Rosita.webp'>")
+                        }
+                        else {
+                            if ($imc < 45) {
+                                document.write("obessidade III")
+                                document.write("<img src = 'img/o4.jpg'>")
+                            }
+                            else {
+                                if ($imc < 50) {
+                                    document.write("obessidade IV")
+                                    document.write("<img src = 'img/pu.jpg'>")
+                                }
+                                else {
+                                    if ($imc < 55) {
+                                        document.write("obessidade V")
+                                        document.write("<img src = 'img/o3.jpg'>")
+                                    }
+                                    else {
+                                        if ($imc < 60) {
+                                            document.write("procurar auxilio")
+                                            document.write("<img src = 'img/stoico.jpg'>")
+                                        }
+                                        else {
+                                            document.write("procurar auxilio urgente")
+                                            document.write("<img src= 'img/pp.jpg'>")
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
