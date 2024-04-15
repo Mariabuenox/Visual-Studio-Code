@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        $ds = prompt("Digite o dia da semana: ")
+
+        switch ($ds) {
+            case "segunda-feira":
+            case "terça-feira":
+            case "quarta-feira":
+            case "quinta-feira":
+            case "sexta-feira":
+
+                document.write("Dia Letivo/ Dia da Semana");
+                break;
+
+            case "Sábado":
+            case "Domingo":
+                document.write("Dia Não-Letivo / Final de Semana");
+                break;
+
+            default:
+                document.write("Opção Inválida")
+                break;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
