@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        $quantidade = prompt("Quantos pacotes há no estoque?")
+
+        document.write("<center>")
+        document.write("<table border='2' width='400'>")
+        document.write("<font color='#000080' size='6'>" + "Tabela de Estoque" + "</font>")
+        document.write("<tr align='center'>")
+        document.write("<td width='200'><b><font size='4'>QUANTIDADE</font></b></td>")
+        document.write("<td width='200'><b><font size='4'>ESTOQUE</font></b></td>")
+        document.write("</tr>")
+        document.write("</center >")
+
+        if ($quantidade < 50) {
+            $estoque = ("<font color='#FF0000'>" + "BAIXO")
+
+            document.write("<tr align= 'center'>")
+            document.write("<td width='200'>" + $quantidade + "</td>")
+            document.write("<td width='200'>" + $estoque + "</td>")
+            document.write("</tr>")
+            document.write("</table>")
+        }
+        else {
+            if ($quantidade < 100) {
+                $estoque = ("<font color='#FFFF00'>" + "NORMAL")
+
+                document.write("<tr align= 'center'>")
+                document.write("<td width='200'>" + $quantidade + "</td>")
+                document.write("<td width='200'>" + $estoque + "</td>")
+                document.write("</tr>")
+                document.write("</table>")
+            }
+            else {
+
+                $estoque = ("<font color='#32CD32'>" + "ALTO")
+                document.write("<tr align= 'center'>")
+                document.write("<td width='200'>" + $quantidade + "</td>")
+                document.write("<td width='200'>" + $estoque + "</td>")
+                document.write("</tr>")
+                document.write("</table>")
+
+            }
+        }
+
+    </script>
+
+</head>
+
+<body bgcolor="#C0C0C0">
+
+</body>
+
+</html>
