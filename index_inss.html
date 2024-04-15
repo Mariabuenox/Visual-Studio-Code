@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        $salario = prompt("Digite seu salário: ")
+
+        document.write("<center>")
+        document.write("<table border='2' width='600'>")
+        document.write("<font color='#000080' size='6'>" + "DESCONTO INSS" + "</font>")
+        document.write("<tr align='center'>")
+        document.write("<td width='200'><b><font size='4'>SALÁRIO</font></b></td>")
+        document.write("<td width='200'><b><font size='4'>PORCENTAGEM</font></b></td>")
+        document.write("<td width='200'><b><font size='4'>INSS</font></b></td>")
+        document.write("</tr>")
+        document.write("</center >")
+
+
+        if ($salario < 1100.01) {
+            $porc = ("7,5%")
+            $porc_ali = ("0.075")
+            $inss = $salario * $porc_ali
+
+            document.write("<tr align= 'center'>")
+            document.write("<td width='200'>" + $salario + "</td>")
+            document.write("<td width='200'>" + $porc + "</td>")
+            document.write("<td width='200'>" + $inss + "</td>")
+            document.write("</tr>")
+            document.write("</table>")
+        }
+        else {
+            if ($salario < 2203.49) {
+                $porc = ("9%")
+                $porc_ali = ("0.09")
+                $inss = $salario * $porc_ali
+
+                document.write("<tr align= 'center'>")
+                document.write("<td width='200'>" + $salario + "</td>")
+                document.write("<td width='200'>" + $porc + "</td>")
+                document.write("<td width='200'>" + $inss + "</td>")
+                document.write("</tr>")
+                document.write("</table>")
+            }
+            else {
+                if ($salario < 3305.23) {
+                    $porc = ("12%")
+                    $porc_ali = ("0.12")
+                    $inss = $salario * $porc_ali
+
+                    document.write("<tr align= 'center'>")
+                    document.write("<td width='200'>" + $salario + "</td>")
+                     document.write("<td width='200'>" + $porc + "</td>")
+                     document.write("<td width='200'>" + $inss + "</td>")
+                    document.write("</tr>")
+                    document.write("</table>")
+                }
+                else {
+                    $porc = ("14%")
+                    $porc_ali = ("0.14")
+                    $inss = $salario * $porc_ali
+
+                    document.write("<tr align= 'center'>")
+                    document.write("<td width='200'>" + $salario + "</td>")
+                    document.write("<td width='200'>" + $porc + "</td>")
+                    document.write("<td width='200'>" + $inss + "</td>")
+                    document.write("</tr>")
+                    document.write("</table>")
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
