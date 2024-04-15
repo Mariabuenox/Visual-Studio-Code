@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        $idade = prompt("Digite sua idade")
+
+        if ($idade < 12) {
+            $status = ("Criança")
+        }
+        else {
+            if ($idade < 21) {
+                $status = ("Jovem")
+            }
+            else {
+                if ($idade < 60) {
+                    $status = ("Adulto")
+                }
+                else {
+                    $status = ("Idoso")
+                }
+            }
+        }
+
+        document.write("Sua idade é: " + $idade + "<br>")
+        document.write("Seu status é: " + $status)
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
