@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        $x = ""
+        $num = prompt("Digite um número: ")
+
+        for ($x = 1; $x <= $num; $x++) {
+            document.writeln("<br>")
+
+            $resto = (parseInt($x) % 5)
+
+            switch ($resto) {
+                case 0:
+                    document.writeln(" PIN")
+                    break;
+
+                default:
+                    document.writeln($x)
+                    break;
+
+            }
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
