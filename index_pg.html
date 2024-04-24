@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <script>
+
+        $nome = this.form1.fNome.value;
+        $idade = this.form1.fIdade.value;
+        $sexo = this.form1.fSexo.value;
+        $curso = this.form1.fCurso.value;
+        $professor1 = this.form1.fProf1.value;
+        $professor2 = this.form1.fProf2.value;
+        $turno = this.form1.fTurno.value;
+        $disciplina = this.form1.fDisc.value;
+        
+
+        $caracteres_n = $nome.length;
+        $caracteres_i = $idade.length;
+        $caracteres_s = $sexo.length;
+        $caracteres_c = $curso.length;
+        $caracteres_p1 = $professor1.length;
+        $caracteres_p2 = $professor2.length;
+        $caracteres_t = $turno.length;
+        $caracteres_d = $disciplina.length;
+
+
+        if ($caracteres_n < 1) {
+            alert("Por Favor, digte seu nome. ")
+            return false
+
+        }
+        if ($caracteres_i < 1) {
+            alert("Por Favor, digte sua idade. ")
+            return false
+
+        }
+        if ($caracteres_s < 1) {
+            alert("Por Favor, selecione seu sexo. ")
+            return false
+
+        }
+        if ($caracteres_c < 1) {
+            alert("Por Favor, selecione seu curso. ")
+            return false
+
+        }
+        if ($caracteres_p1 < 1) {
+            alert("Por Favor, digite o nome do seu docente. ")
+            return false
+
+        }
+        if ($caracteres_p2 < 1) {
+            alert("Por Favor, digite o nome do seu docente. ")
+            return false
+
+        }
+
+        if ($caracteres_d < 1) {
+            alert("Por Favor, selecione suas disciplinas. ")
+            return false
+
+        }
+
+        document.write("Seu nome é = " + $nome + "<br>");
+        document.write($nome + ", sua idade é = " + $idade + "<br>");
+        document.write($nome + " tem " + $caracteres_n + " caracteres." + "<br>");
+        document.write("Seu sexo é = " + $sexo + "<br>");
+        document.write("Seu curso é = " + $curso + " ,e você estuda no turno =" + $turno + "<br>");
+        document.write("Seu professores são = " + $professor1 + "e" + $professor2 + "<br>");
+        document.write("Suas materia são = " + $disciplina + "<br>");
+
+        return false;
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <center>
+
+        <font color="red" size="6"> FORMULÁRIO </font>
+
+        <form name="form1" method="post" action="" onsubmit="return senai()">
+
+            <table border="1" width="600" height="20" color="black">
+
+                <td width="1">
+                    <b>Nome: </b><input type="text" name="fNome">
+
+                    ㅤㅤㅤㅤㅤ
+
+                    <b>Sexo: </b><br>
+                    
+                    <b>Idade: </b><input type="text" name="fIdade"> ㅤㅤㅤㅤㅤ
+
+                    Masculino: <input type="radio" name="fSexo" value="masc">
+                    Feminino: <input type="radio" name="fSexo" value="fem">
+                    Outro: <input type="radio" name="fSexo" value="other">
+
+                    <br><br>
+
+                    
+
+
+                    <b>Curso: </b><select name="fCurso">
+
+                        <option value="emBranco">Escolha uma opção abaixo: </option>
+                        <option value="mecanica"> Mecânica </option>
+                        <option value="solda"> Solda </option>
+                        <option value="ds"> Desenvolvimento de sistemas </option>
+
+                    </select>
+
+                    ㅤㅤㅤ
+
+                    <b>Disciplinas: </b><select name="fDisc"><br><br>
+                    
+                    Professor: <input type="text" name="fProf1">ㅤㅤㅤㅤ<input type="checkbox" name="disc_html"> Html <br>
+                    Professor: <input type="text" name="fProf2">ㅤㅤㅤㅤ<input type="checkbox" name="disc_js"> JavaScript <br>
+                    
+                    ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ<input type="checkbox" name="disc_ard"> Arduíno <br>
+
+                                      
+                    <b>Turno: </b> <select name="fTurno">
+                    <option value="emBranco"> Escolha uma opção abaixo:  </option>
+                    <option value="manha"> Manhã </option>
+                    <option value="tarde"> Tarde </option>
+                    <option value="noite"> Noite </option>
+
+                    </select>
+                    ㅤㅤㅤㅤ<input type="checkbox" name="disc_gtc"> Gestact <br>
+                        
+                    ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ<input type="checkbox" name="disc_ldp"> Lógica de programação <br>
+                    </select> 
+                    <center>
+                        <br><br>
+
+                        <input type="submit" value="Gravar">
+                        <input type="submit" value="Limpar">
+
+                        <br><br>
+
+                    </center>
+
+                </td>
+
+            </table>
+
+        </form>
+
+    </center>
+
+</body>
+
+</html>

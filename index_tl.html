@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <script>
+
+        function senai() {
+
+
+            $login = this.form1.fLogin.value
+            $senha = this.form1.fSenha.value
+
+            if (($login == "SENAI") || ($login == "SESI")) {
+                //alert("Login autorizado")
+
+                if ($senha == "1234") {
+                    alert("Seja bem-vindo!")
+
+                }
+
+                else if ($senha == "aluno") {
+                    alert("Seja bem-vindo!")
+
+                }
+
+                else if ($senha == "sumare") {
+                    alert("Seja bem-vindo!")
+
+                }
+                else {
+                    alert("login ou senha incorretos, tente novamente.")
+                    document.write("<img src = 'img/error.jpg'>")
+                }
+
+            }
+            else {
+                alert("login ou senha incorretos, tente novamente.")
+                document.write("<img src = 'img/error.jpg' width='100%'>")
+            }
+            
+            return false;
+        } 
+    </script>
+
+</head>
+
+<body>
+
+    <form name="form1" method="post" action="" onsubmit="return senai()">
+
+        <center>
+            <table border="2" width="280" height="400">
+                <td width="1">
+                    <b>
+                        <center>
+                            <font color="#FF0000" size="6,5">MEU SENAI: </font><br><br>
+                            Login: <input type="text" name="fLogin"><br><br>
+                            Senha: <input type="password" name="fSenha"><br><br>
+                    </b>
+
+                    <a href = ./index_pg.html><input type="submit" value="Gravar"></a>
+                    <input type="submit" value="Limpar">
+
+                </td>
+            </table>
+
+        </center>
+
+    </form>
+
+</body>
+
+</html>
